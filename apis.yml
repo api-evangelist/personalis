@@ -1,8 +1,25 @@
 aid: personalis
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/personalis.png
 name: Personalis
-description: Personalis is a company surfaced as a portfolio company of lightspeed-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Personalis, Inc. (NASDAQ PSNL) is a clinical genomics and cancer diagnostics company based
+  in Fremont, California. It develops advanced tumor and immune profiling tests built on next-generation
+  sequencing, including its NeXT Personal ultra-sensitive tumor-informed molecular residual disease (MRD)
+  and recurrence-monitoring assay and the ImmunoID NeXT whole-exome and transcriptome platform used for
+  translational cancer research, biopharma partnerships, and population sequencing programs. Personalis
+  operates as a diagnostics laboratory and research-services provider; its offerings are delivered as
+  clinical tests, sequencing services, and analytical reports rather than as a public developer API. No
+  public developer portal, API reference, or SDK is published as of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/personalis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +29,29 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Genomics
+- Oncology
+- Diagnostics
+- Sequencing
+- Precision Medicine
+- Healthcare
+- Life Sciences
+common:
+- type: DomainSecurity
+  url: security/personalis-domain-security.yml
+- type: Website
+  url: https://www.personalis.com
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
