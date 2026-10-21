@@ -1,0 +1,53 @@
+edges:
+- partner_name: EUDAMED (EU IVDR manufacturers)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://ec.europa.eu/tools/eudamed/#/screen/search-eo/9425e8e6-27de-4509-99fd-ede7c786a5db
+  category: EU IVDR-registered manufacturer
+  contract_reference:
+    register: EUDAMED public API (UDI-DI data, applicable legislation IVDR; actor public information)
+    standard: EU IVDR (Regulation (EU) 2017/746) manufacturer + UDI registration
+    spec_file: null
+    role: eudamed-ivdr-manufacturer
+    registered_name: Personalis, Inc.
+    matched_domain: personalis.com
+    matched_by: domain
+    detected_by: sweep-ivd-diagnostics.py
+    detected: '2026-10-21'
+    register_id: US-MF-000050141
+    register_country: US
+    actor_status: active
+    domain_from: registered e-mail domain
+    trade_names_sample:
+    - The Personalis cfDNA Blood Collection Kit
+    certified_products:
+    - product: EU IVDR device registration, class A
+      product_type: IVDR class A
+      lapsed: false
+      statuses:
+      - on-the-market
+    signal_note: 'certified_products = one entry per IVDR RISK CLASS with registered devices, never per device;
+      lapsed when no device of that class is on the market. Self-filed actor registration: domain + name check +
+      country agreement, hand-reviewed'
+  detected_by: sweep-ivd-diagnostics.py
+  first_seen: '2026-10-21'
+generated: '2026-10-21'
+method: searched
+source:
+- https://api.fda.gov/device/510k.json
+- https://api.fda.gov/device/pma.json
+- https://api.fda.gov/device/registrationlisting.json
+- https://www.accessdata.fda.gov/premarket/ftparea/clia_detail.zip
+- https://ec.europa.eu/tools/eudamed/api/
+- https://www.advamed.org/advameddx/members/
+checked:
+- https://api.fda.gov/device/510k.json
+- https://api.fda.gov/device/pma.json
+- https://api.fda.gov/device/registrationlisting.json
+- https://ec.europa.eu/tools/eudamed/api/
+- https://www.accessdata.fda.gov/premarket/ftparea/clia_detail.zip
+- https://www.advamed.org/advameddx/members/
